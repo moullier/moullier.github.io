@@ -87,7 +87,7 @@ h3 {
 
   .work {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     width: 100%;
   }
 
@@ -95,4 +95,8 @@ h3 {
       border-style: solid;
       border-radius: 2px;
       border-color: #27325D;
+  }
+
+  .appTitle {
+    margin-bottom: 8px;
   }
