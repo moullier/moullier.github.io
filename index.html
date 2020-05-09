@@ -1,65 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Maria Francis-Moullier - Portfolio</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maria Francis-Moullier - Portfolio">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+        
 
-    <!-- Import fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-
-    <!-- My stylesheet -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-
-
-</head>
 <body>
-    <div class="container-fluid">
-        <div class="row" id="headerRow">
-            <div class="col-md-6 col-12 justify-content-center d-flex justify-content-md-start">
-                <h2 id="logo">Maria Francis-Moullier</h2>
-            </div>
-            <div class="col-md-6 col-12" id="navbar">
-                <div class="nav justify-content-center justify-content-md-end" id="navlist">
-                    <ul class="nav">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="index.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="projects.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="contact.html">Contact Me</a>
-                        </li>
-                      </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="container">
-        <div class="row" id="bodyRow">
-            <h3 id="headerText">About Me</h3>
-        </div>
-        <div class="row" id="bodyContent">
-            <div class="col-12">
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container clearfix">                       
+            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/profile.jpg" alt="profile image" />
+            <div class="profile-content float-left">
+                <h1 class="name">Maria Francis-Moullier</h1>
+                <h2 class="desc">Web Developer</h2>   
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https://twitter.com/MariaMoullier"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/maria-francis-moullier/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/moullier"><i class="fab fa-github-alt"></i></a></li>    
+                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/12173644/moullier"><i class="fab fa-stack-overflow"></i></a></li>               
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary float-right" href="https://moullier.github.io/assets/docs/Maria%20Francis-Moullier%20-%20Resume%20-%20Web%20Developer.pdf" target="_blank"><i class="fas fa-file"></i> My Resumé</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>My name is Maria Francis-Moullier, and I am a full stack web developer with skills in React, Node.js, JavaScript, SQL, HTML and CSS.  I have a B.S. degree in Computer Science from the University of Arizona, and completed a certificate in Full Stack Web Development from the University of Arizona in April 2020.</p>
+                         
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">    
+                                               
+                            <div class="item featured text-center">
+                                
+                                <div class="featured-image has-ribbon">
+                                    <a href="https://covid-disaster-tracker.herokuapp.com/" target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/cdt_ss1.png" alt="Screenshot of COVID-19 Disaster Tracker" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">New</div>
+                                    </div>
+                                </div>
+                                
+                                <h3 class="title mb-3"><a href="https://covid-disaster-tracker.herokuapp.com/" target="_blank">COVID-19 Disaster Tracker</a></h3>
+                                    
+                                <div class="desc text-left">
+                                    <p><strong>Technologies Used:</strong> 
+                                        <span class="badge badge-info">React</span>
+                                        <span class="badge badge-info">Leaflet</span> 
+                                        <span class="badge badge-info">Chart.js</span> 
+                                        <span class="badge badge-info">Node.js</span> 
+                                        <span class="badge badge-info">MySQL</span> 
+                                        <span class="badge badge-info">JavaScript</span> 
+                                        <span class="badge badge-info">CSS</span> 
+                                        <span class="badge badge-info">Bootstrap</span> 
+                                        <span class="badge badge-info">Express</span>
+                                    </p>
+                                    <p>This application showcases data relating to the Covid-19 Pandemic and other natural disasters in the US at both state and county levels. Users can see information in map form, as well as charts and tables.  They can also track multiple counties, get information on hospitals and urgent cares in their area, and create a disaster kit based on the Ready.gov recommendations and their individual needs.</p>
+                                </div><!--//desc-->                         
+                            </div><!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://xfl-pickem.herokuapp.com/" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/pickem_ss.png" alt="XFL Pick'Em Game" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://xfl-pickem.herokuapp.com/" target="_blank">XFL Pick'Em</a></h3>
+                                    <p class="mb-2">
+                                        <strong>Technologies Used: </strong>
+                                        <span class="badge badge-info">Node.js</span> 
+                                        <span class="badge badge-info">MySQL</span> 
+                                        <span class="badge badge-info">JavaScript</span> 
+                                        <span class="badge badge-info">jQuery</span> 
+                                        <span class="badge badge-info">CSS</span> 
+                                        <span class="badge badge-info">Bootstrap</span> 
+                                        <span class="badge badge-info">Express</span>
+                                        <span class="badge badge-info">Handlebars</span>
+                                    </p>
+                                    <p>
+                                        This application is a Pick'Em game for the XFL Football league. Users can create leagues and play against their friends guessing which team will win each week.
+                                    </p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://moullier.github.io/recipefinder/recipefinder.html" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/recipe_ss.png" alt="Recipe Finder" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://moullier.github.io/recipefinder/recipefinder.html" target="_blank">Recipe Finder</a></h3>
+                                    <p><strong>Technologies Used:</strong> 
+                                        <span class="badge badge-info">JavaScript</span>
+                                        <span class="badge badge-info">jQuery</span> 
+                                        <span class="badge badge-info">CSS</span> 
+                                        <span class="badge badge-info">Bootstrap</span>
+                                        <span class="badge badge-info">HTML</span>
+                                        <span class="badge badge-info">AJAX</span>
+                                        <span class="badge badge-info">REST APIs</span> 
+                                    </p>
+                                    <p class="mb-2">The recipe finder takes a list of ingredients that the user might have at home, and queries an API for a list of recipes that they can create with them. There is a page that returns recipes for food, as well as a page that allows the user to enter cocktail ingredients that they have on hand and returns a list of potential drinks that they can mix.</p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+                                
+                <section class="experience section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Supportability Specialist - <span class="place">Intuit</span> <span class="year">(2014 - 2018)</span></h3>
+                                <p>Gathered and maintained data and provided insights to stakeholders on the pain points and priorities of Intuit’s software-as-a-service product customers.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Service and Support Agent - <span class="place">Intuit</span> <span class="year">(2010 - 2014)</span></h3>
+                                <p>Worked with customers in a front-line technical support and sales role, resolving problems and ensuring use of best-fit
+                                products to support their business.  Supported front-line agents and travelled to partner sites to train them.</p>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Tucson, Arizona</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span>moullier@gmail.com</li>
+                                <li><i class="fas fa-phone-square-alt"></i><span class="sr-only">Phone:</span>520-661-8894</li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">
+                                I'm always working to develop new skills and work with new technologies.  Below is my base skillset, but lately I've been working with maps in Leaflet/React-Leaflet and MongoDB as well.</p>
+                            
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">Javascript &amp; jQuery</h3>
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">React.js</h3>
+                                </div><!--//item-->
 
-                <img src="assets/images/maria3.jpg"  id="mypicture" class="auth-image img-fluid" alt="Maria Francis-Moullier">
-        
-                <p>My name is Maria Francis-Moullier, and I am a full stack web developer with skills in JavaScript, SQL, HTML and CSS.  I have a B.S. degree in Computer Science from the University of Arizona, and completed a certificate in Full Stack Web Development from the University of Arizona in April 2020.</p>
-        
-                <p>In my career, I have developed a reputation as a team player who contributes to the larger organization’s success through conducting training, developing SOPs and best practices, and analyzing data for customer insights.  I have experience working in an Agile environment on a cross-functional product team.</p>
+                                <div class="item">
+                                    <h3 class="level-title">MySQL</h3>
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">CSS &amp; HTML</h3>
+                                </div><!--//item-->
+                                
+                                <p><a class="more-link" href="https://github.com/moullier"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> 
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BS Computer Science</h3>
+                                <h4 class="university">University of Arizona <span class="year">(2001-2005)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BS Political Science</h3>
+                                <h4 class="university">University of Arizona <span class="year">(2001-2005)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> JD Law</h3>
+                                <h4 class="university">University of Arizona, James E. Rogers College of Law <span class="year">(2005-2008)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Web Development Certificate</h3>
+                                <h4 class="university">University of Arizona <span class="year">(2019-2020)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+            
+            </div><!--//secondary-->    
+        </div><!--//row-->                    
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <small class="copyright">© 2020</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
 
-                <p>Working in the financial software-as-a-service industry, I built a business case from customer feedback data that led to the implementation of a requested SKU downgrade feature. This feature reduced customer cancellations by 20% while increasing transactional Net Promoter Scores by 37% on these customer contacts, and was nominated for a company innovation award.   I’m excited to contribute to an organization with my web development skills, creating better customer experiences.</p>
-
-                <p><a href="./assets/docs/Maria Francis-Moullier - Resume - Web Developer.pdf" target="_blank" id="resumeList">My Resume</a></p>
-              </div>
-        </div>
-    </div>
-
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
 </body>
-</html>
+</html> 
+
